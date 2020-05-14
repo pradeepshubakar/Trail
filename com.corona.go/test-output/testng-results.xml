@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[hi]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20800" started-at="2020-05-14T07:53:26Z" finished-at="2020-05-14T07:53:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20800" started-at="2020-05-14T07:53:26Z" finished-at="2020-05-14T07:53:47Z">
+      <class name="Test.Sample">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Test.Sample@59ec2012]" name="openBrowser" is-config="true" duration-ms="4001" started-at="2020-05-14T07:53:26Z" finished-at="2020-05-14T07:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Test.Sample@59ec2012]" name="login" is-config="true" duration-ms="8675" started-at="2020-05-14T07:53:30Z" finished-at="2020-05-14T07:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="test()[pri:0, instance:Test.Sample@59ec2012]" name="test" duration-ms="4" started-at="2020-05-14T07:53:39Z" finished-at="2020-05-14T07:53:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[hi]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:Test.Sample@59ec2012]" name="logout" is-config="true" duration-ms="7988" started-at="2020-05-14T07:53:39Z" finished-at="2020-05-14T07:53:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.Sample@59ec2012]" name="closeBrowser" is-config="true" duration-ms="121" started-at="2020-05-14T07:53:47Z" finished-at="2020-05-14T07:53:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Test.Sample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
