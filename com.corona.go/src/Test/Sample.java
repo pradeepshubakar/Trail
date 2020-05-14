@@ -1,6 +1,5 @@
 package Test;
 
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.actitime.generics.Baseclass1;
@@ -10,6 +9,6 @@ public class Sample extends Baseclass1 {
 
 	@Test
 	public void test() {
-		Reporter.log("hi",true);
+		
 	}
 }

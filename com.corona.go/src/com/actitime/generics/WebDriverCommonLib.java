@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WebDriverCommonLib extends BaseClass{
+public class WebDriverCommonLib extends Baseclass1{
 
 	public void waitForPageLoad() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

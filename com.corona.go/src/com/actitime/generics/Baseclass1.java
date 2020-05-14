@@ -6,11 +6,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-
 import com.actitime.pom.HomePage;
 import com.actitime.pom.LoginPage;
 
@@ -29,7 +28,7 @@ public class Baseclass1 {
 	
 	
 	//@Parameters("browser")
-	@BeforeTest
+	@BeforeClass
 	public void openBrowser() throws IOException {
 		 String browser = f.getPropertyFileData("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -58,7 +57,7 @@ public class Baseclass1 {
 		Thread.sleep(10);
 		h.getLogOut().click();
 	}
-	@AfterTest
+	@AfterClass
 	public void closeBrowser() {
 		driver.close();
 	}
