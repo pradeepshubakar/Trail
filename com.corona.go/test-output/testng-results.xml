@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24718" started-at="2020-05-14T14:27:33Z" finished-at="2020-05-14T14:27:58Z">
+  <suite name="Default suite" duration-ms="39911" started-at="2020-05-16T07:25:45Z" finished-at="2020-05-16T07:26:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24718" started-at="2020-05-14T14:27:33Z" finished-at="2020-05-14T14:27:58Z">
-      <class name="Test.Sample">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Test.Sample@31a5c39e]" name="openBrowser" is-config="true" duration-ms="4841" started-at="2020-05-14T14:27:33Z" finished-at="2020-05-14T14:27:38Z">
+    <test name="Default test" duration-ms="39911" started-at="2020-05-16T07:25:45Z" finished-at="2020-05-16T07:26:25Z">
+      <class name="Test.Demo">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Test.Demo@72d818d1]" name="openBrowser" is-config="true" duration-ms="4951" started-at="2020-05-16T07:25:45Z" finished-at="2020-05-16T07:25:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Test.Sample@31a5c39e]" name="login" is-config="true" duration-ms="11296" started-at="2020-05-14T14:27:38Z" finished-at="2020-05-14T14:27:49Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Test.Demo@72d818d1]" name="login" is-config="true" duration-ms="10486" started-at="2020-05-16T07:25:50Z" finished-at="2020-05-16T07:26:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="test()[pri:0, instance:Test.Sample@31a5c39e]" name="test" duration-ms="46" started-at="2020-05-14T14:27:49Z" finished-at="2020-05-14T14:27:49Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:Test.Demo@72d818d1]" name="test" duration-ms="20404" started-at="2020-05-16T07:26:01Z" finished-at="2020-05-16T07:26:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:Test.Sample@31a5c39e]" name="logout" is-config="true" duration-ms="8358" started-at="2020-05-14T14:27:49Z" finished-at="2020-05-14T14:27:58Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:Test.Demo@72d818d1]" name="logout" is-config="true" duration-ms="3298" started-at="2020-05-16T07:26:21Z" finished-at="2020-05-16T07:26:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.Sample@31a5c39e]" name="closeBrowser" is-config="true" duration-ms="158" started-at="2020-05-14T14:27:58Z" finished-at="2020-05-14T14:27:58Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.Demo@72d818d1]" name="closeBrowser" is-config="true" duration-ms="750" started-at="2020-05-16T07:26:25Z" finished-at="2020-05-16T07:26:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Test.Sample -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Test.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

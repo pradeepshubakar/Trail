@@ -1,4 +1,4 @@
-/*package com.actitime.generics;
+package com.actitime.generics;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,26 +12,23 @@ import org.testng.ITestResult;
 
 public class ListenerImplementation extends Baseclass1 implements ITestListener{
 
-	@Override
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onStart(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onTestFailure(ITestResult result) {
+		// TODO Auto-generated method stub
 		String TcName = result.getName();
 		TakesScreenshot t=(TakesScreenshot) driver;
 		File src = t.getScreenshotAs(OutputType.FILE);
@@ -42,21 +39,19 @@ public class ListenerImplementation extends Baseclass1 implements ITestListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
 
-	@Override
 	public void onTestSkipped(ITestResult arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onTestStart(ITestResult arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onTestSuccess(ITestResult arg0) {
 		// TODO Auto-generated method stub
 		
@@ -64,4 +59,3 @@ public class ListenerImplementation extends Baseclass1 implements ITestListener{
 
 	
 }
-*/

@@ -4,14 +4,13 @@
   <artifactId>com.corona1.go</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.1.0</version>
-    <scope>test</scope>
+    <version>6.14.3</version>
 </dependency>
+
 
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -24,12 +23,13 @@
     <artifactId>poi-ooxml</artifactId>
     <version>4.1.2</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
 <dependency>
-    <groupId>commons-io</groupId>
+    <groupId>org.apache.commons</groupId>
     <artifactId>commons-io</artifactId>
-    <version>2.6</version>
+    <version>1.3.2</version>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -43,14 +43,7 @@
     <pluginManagement>
     <plugins>
      
-     <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
+    
     <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
