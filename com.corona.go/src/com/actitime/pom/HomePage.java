@@ -25,6 +25,27 @@ public class HomePage {
 	private WebElement createCustomerTab;
 	
 	
+	@FindBy(xpath="//div[.='+ New Tasks']")
+	private WebElement NewTaskTab;
+	@FindBy(xpath="//div[.='- New Customer -']")
+	private WebElement newCustomerTab;
+	@FindBy(xpath="//input[@placeholder='Enter Customer Name' and @class]")
+	private WebElement EnterCustomerNameTxtbox;
+	@FindBy(xpath="//input[@placeholder='Enter Project Name' and @class]")
+	private WebElement EnterPorjectNameTxtbox;
+	@FindBy(xpath="(//input[@placeholder='Enter task name' ])[1]")
+	private WebElement EnterTaskNameTxtbox;
+	@FindBy(xpath="(//input[@placeholder='not needed' ])[1]")
+	private WebElement EstimateTab;
+	@FindBy(xpath="(//button[.='set deadline'])[1]")
+	private WebElement DeadlineTab;
+	@FindBy(xpath="//div[contains(@id,'ext-gen9')]//span[.='22']")
+	private WebElement setDeadLine;
+	@FindBy(xpath="(//span[@class='checkmark checkMark'])[2]")
+	private WebElement checkbox;
+	@FindBy(xpath="//div[.='Create Tasks']")
+	private WebElement createTaskTab;
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -62,5 +83,35 @@ public class HomePage {
 
 	
 	
-
+	public void clickOnNewTaskTab() {
+		 NewTaskTab.click();
+	}
+	public void clickOnnewCustomerTab() {
+		 newCustomerTab.click();
+	}
+	public WebElement setEnterCustomerNameTxtbox() {
+		 return EnterCustomerNameTxtbox;
+	}
+	public WebElement setEnterPorjectNameTxtbox() {
+		 return EnterPorjectNameTxtbox;
+	}
+	public WebElement setEnterTaskNameTxtbox() {
+		 return EnterTaskNameTxtbox;
+	}
+	public void clickOnEstimateTab() {
+		 EstimateTab.click();;
+	}
+	public void clickOnDeadlineTab() {
+		 DeadlineTab.click();;
+	}
+	public void clickOnsetDeadLine() {
+		 setDeadLine.click();;
+	}
+	
+	public void clickOncheckbox() {
+		checkbox.click();
+	}
+	public void clickcreateTaskTab() {
+		createTaskTab.click();
+	}
 }

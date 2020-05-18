@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39911" started-at="2020-05-16T07:25:45Z" finished-at="2020-05-16T07:26:25Z">
+  <suite name="Suite" duration-ms="81480" started-at="2020-05-18T08:29:52Z" finished-at="2020-05-18T08:31:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39911" started-at="2020-05-16T07:25:45Z" finished-at="2020-05-16T07:26:25Z">
-      <class name="Test.Demo">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Test.Demo@72d818d1]" name="openBrowser" is-config="true" duration-ms="4951" started-at="2020-05-16T07:25:45Z" finished-at="2020-05-16T07:25:50Z">
+    <test name="Test" duration-ms="81480" started-at="2020-05-18T08:29:52Z" finished-at="2020-05-18T08:31:14Z">
+      <class name="Test.Sample">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Test.Sample@6e06451e]" name="openBrowser" is-config="true" duration-ms="3841" started-at="2020-05-18T08:29:52Z" finished-at="2020-05-18T08:29:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Test.Demo@72d818d1]" name="login" is-config="true" duration-ms="10486" started-at="2020-05-16T07:25:50Z" finished-at="2020-05-16T07:26:01Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Test.Sample@6e06451e]" name="login" is-config="true" duration-ms="13996" started-at="2020-05-18T08:29:56Z" finished-at="2020-05-18T08:30:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="test()[pri:0, instance:Test.Demo@72d818d1]" name="test" duration-ms="20404" started-at="2020-05-16T07:26:01Z" finished-at="2020-05-16T07:26:21Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:Test.Sample@6e06451e]" name="test1" duration-ms="23050" started-at="2020-05-18T08:30:10Z" finished-at="2020-05-18T08:30:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:Test.Demo@72d818d1]" name="logout" is-config="true" duration-ms="3298" started-at="2020-05-16T07:26:21Z" finished-at="2020-05-16T07:26:25Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:Test.Sample@6e06451e]" name="logout" is-config="true" duration-ms="3055" started-at="2020-05-18T08:30:33Z" finished-at="2020-05-18T08:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.Demo@72d818d1]" name="closeBrowser" is-config="true" duration-ms="750" started-at="2020-05-16T07:26:25Z" finished-at="2020-05-16T07:26:25Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.Sample@6e06451e]" name="closeBrowser" is-config="true" duration-ms="75" started-at="2020-05-18T08:31:13Z" finished-at="2020-05-18T08:31:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+      </class> <!-- Test.Sample -->
+      <class name="Test.Demo">
+        <test-method status="PASS" signature="login()[pri:0, instance:Test.Demo@59494225]" name="login" is-config="true" duration-ms="3423" started-at="2020-05-18T08:30:36Z" finished-at="2020-05-18T08:30:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="test()[pri:0, instance:Test.Demo@59494225]" name="test" duration-ms="31457" started-at="2020-05-18T08:30:39Z" finished-at="2020-05-18T08:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:Test.Demo@59494225]" name="logout" is-config="true" duration-ms="2568" started-at="2020-05-18T08:31:11Z" finished-at="2020-05-18T08:31:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
       </class> <!-- Test.Demo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

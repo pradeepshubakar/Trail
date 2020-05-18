@@ -6,8 +6,8 @@
       <class name="Test.Demo">
         <methods>
           <include name="openBrowser"/>
-          <include name="login"/>
           <include name="closeBrowser"/>
+          <include name="login"/>
           <include name="test"/>
           <include name="logout"/>
         </methods>

@@ -8,8 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
 import com.actitime.pom.HomePage;
 import com.actitime.pom.LoginPage;
 
@@ -28,7 +33,7 @@ public class Baseclass1 {
 	
 	
 	//@Parameters("browser")
-	@BeforeClass
+	@BeforeTest
 	public void openBrowser() throws IOException {
 		 String browser = f.getPropertyFileData("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -38,9 +43,11 @@ public class Baseclass1 {
 			driver=new FirefoxDriver();
 			
 		}
+		driver.manage().window().maximize();
 	}
-	@BeforeMethod
+	@BeforeClass
 	public void login() throws IOException {
+		
 		driver.get(f.getPropertyFileData("url"));
 		 LoginPage l=new LoginPage(driver);
 		l.getUnTbx().sendKeys(f.getPropertyFileData("username"));
@@ -50,14 +57,14 @@ public class Baseclass1 {
 		driver.findElement(By.xpath("//input[@name='pwd']")).sendKeys(f.getPropertyFileData("password"));
 		driver.findElement(By.xpath("//div[.='Login ']")).click();*/
 	}
-	@AfterMethod
+	@AfterClass
 	public void logout() throws InterruptedException {
 		 HomePage h=new HomePage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(10);
 		h.getLogOut().click();
 	}
-	@AfterClass
+	@AfterTest
 	public void closeBrowser() {
 		driver.close();
 	}
